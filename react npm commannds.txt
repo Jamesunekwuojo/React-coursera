@@ -1,0 +1,4 @@
+//The following are  npm commands used to create react-app.
+// npm init react-app foldername
+//npx create-react-app foldername
+// npm create vite@latest

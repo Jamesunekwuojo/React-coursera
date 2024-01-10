@@ -1,0 +1,1 @@
+import  { multAB}   from  "./multAB";
