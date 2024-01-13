@@ -2,10 +2,15 @@ import { useState } from 'react'
 import './App.css'
 import PropsLab from './PropsLab'
 import DynamicE from './DynamicE'
+import Usestate from './usestate'
 
 function App() {
   const [count, setCount] = useState(0)
-  const[food, setFood] = useState(Eat)
+  const[food, setFood] = useState('Eat')
+
+  function updatestste(){
+    setFood('Drink')
+  }
 
   return (
     <>
@@ -13,7 +18,10 @@ function App() {
         <DynamicE/>
         <PropsLab firstName="James"/>
 
-        <usestate message="food"/>
+        <Usestate message ={food  + "orange"}/>
+        <button onClick={updatestste}> click me to update</button>
+
+      
        
       
       </div>
